@@ -1,0 +1,80 @@
+body {
+    display: grid;
+    justify-self: center;
+}
+
+.principal-contato {
+    background:  rgba(15, 79, 124, .075);
+    box-shadow: inset 0px 600px  var(--cor-p4);
+}
+
+.contato-container {
+    padding: 60px;
+}
+
+.principal-contato h1 {
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor-p6);
+    text-transform: uppercase;
+    padding-bottom: 120px;
+}
+
+.contato-localizacao {
+    display: grid;
+    justify-content: center;
+}
+
+.contato-localizacao .mapa {
+    border-radius: 16px 16px 0px 0px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .275);
+   
+}
+
+.localizacao-info {
+    background-color: var(--cor-branco);
+    padding: 30px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .275);
+    border-radius: 0 0 16px 16px;
+}
+
+.localizacao-info h2 {
+    font-size: 2rem;
+    font-family: 'poppins', sans-serif;
+    padding-bottom: 18px;
+    color: #111;
+}
+
+.localizacao-info ul li {
+    font-family: 'Roboto', sans-serif;
+    color: #7c7c7c;
+    padding-left: 16px;
+    position: relative;
+}
+
+.localizacao-info ul li::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 100%;
+    background:  rgba(15, 79, 124, .075);
+    position: absolute;
+    left: 0px;
+}
+
+.localizacao-info ul li:nth-child(1),
+.localizacao-info ul li:nth-child(2) {
+    padding-bottom: 8px ;
+}
+
+.h-funcionamento {
+    display: flex;
+    padding-top: 18px;
+    gap: 8px;
+}
+
+.h-funcionamento p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #111;
+}

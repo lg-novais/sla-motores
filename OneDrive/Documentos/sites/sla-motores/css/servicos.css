@@ -1,0 +1,47 @@
+.destaque {
+    font-weight: 600;
+}
+body {
+    display: grid;
+    justify-self: center;
+}
+
+.servico-container {
+    padding: 60px;
+}
+.servico-titulo {
+    background: var(--cor-principal);
+    padding: 60px;
+}
+.servico-titulo h1 {
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor-p6);
+    text-transform: uppercase;
+}
+.servico-conteudo h2 {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.servico-conteudo h3 {
+    font-weight: 550;
+    font-size: 1.275rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0 18px 0;
+}
+
+.servico-conteudo p{
+    max-width: 90ch;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    letter-spacing: .5px;
+    margin-bottom: 8px;
+}
+
+.servico-container {
+    display: grid;
+    /* justify-items: center; */
+}
