@@ -207,10 +207,13 @@ body {
     .solucao-texto p {
         font-size: 1.5rem;
     }
+    .js .cabecalho-container {
+        display: flex;
+    }
     .js [data-menu="botao"] {
         display: flex;
         border: none;
-        padding: 18px 22px;
+        padding: 18px 22px 18px 44px;
         cursor: pointer;
         text-transform: uppercase;
         font-size: 1.125rem;
@@ -235,24 +238,31 @@ body {
         background: #fff;
         box-shadow: 0 4px #fff, 0 -4px #fff;
         transition: transform .3s;
+        position: absolute;
+        left: 22px;
       }
     
-      .js [data-menu="botao"].active::before {
+      .js [data-menu="botao"].ativo::before {
         transform: rotate(90deg);
       }
-    
-      .js [data-menu="lista"] {
+      .js [data-menu="lista"]{
         display: none;
-        position: absolute;
-        background: #FB5;
-        width: 160px;
-        z-index: 200;
-        top: 0;
-        padding: 60px 0 20px 0;
-        box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
       }
-      .js [data-menu="lista"].active {
+      .js [data-menu="lista"].ativo {
         display: flex;
-        animation: show-right .3s forwards;
+        flex-direction: column;
+        gap: 22px;
+        position: absolute;
+        background: #fff;
+        z-index: 200;
+        top: 150px;
+        right: 58px;
+        padding: 20px 0 20px 0;
+        box-shadow: 4px 4px 4px 0 rgba(0,0,0,.2);
+        border-radius: 8px
       }
+      .js [data-menu="lista"] li {
+        padding: 0;
+      }
+    
 }
