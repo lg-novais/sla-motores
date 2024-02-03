@@ -257,6 +257,7 @@ body {
     
         .js [data-menu="botao"].ativo::before {
         transform: rotate(90deg);
+        transition: .3s;
         }
         .js [data-menu="lista"]{
           display: none;
@@ -279,6 +280,7 @@ body {
         right: 0px;
         padding-top: 130px;
         box-shadow: 8px 8px 4px 0 rgba(0,0,0,.2);
-        border-radius: 8px
+        border-radius: 8px;
+        transition: .3s;
         }
 }
