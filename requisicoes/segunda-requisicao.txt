@@ -1,0 +1,11 @@
+-Banners da página inicial;
+-Foto de um lugar relevante da empresa para deixar como "apresentação" (boas vindas);
+-Explicação das áreas de soluções;
+-História da empresa;
+-Banner da página empresa;
+	-foto para o banner (Prefêrencia que seja com todos os integrantes da equipe)
+-Banner da página Locação;
+	-foto para o banner (Ideia: pode ser uma foto com alguns equipamentes que fazem parte desse tipo de serviço)
+-Banner da página de vendas;
+	-foto para o banner
+-Foto dos produtos para venda / locação

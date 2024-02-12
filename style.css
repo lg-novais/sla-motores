@@ -278,7 +278,7 @@ body {
     gap: 22px;
     position: fixed;
     background: #fff;
-    height: 100vh;
+    height: 100%;
     width: 100% ;
     z-index: 200;
     top: 0px;
