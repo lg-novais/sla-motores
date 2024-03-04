@@ -1,8 +1,17 @@
+/*
+Theme Name: SLA Mototes
+Theme URI: http://slamotores.com
+Author: Luiz Gustavo
+Description: Tema criado para a SLA Motores
+Version: 6.4.3
+*/
+
 @import 'css/empresa.css';
 @import 'css/servicos.css';
 @import 'css/cabecalho.css';
 @import 'css/rodape.css';
 @import 'css/contato.css';
+@import 'css/produto.css';
 
 *, a, ul, li, img{
     margin: 0;
@@ -11,6 +20,10 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+}
+
+img {
+    object-fit: cover;
 }
 
 a {
@@ -52,6 +65,57 @@ a {
 .call-to-action a:hover {
     background: var(--cor-p5);
     color: var(--cor-branco);
+}
+
+header {
+    background-color: rgba(15, 79, 124, .125);
+}
+
+.cabecalho-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.cabecalho-container ul {
+    display: flex;
+}
+
+.cabecalho-container ul li {
+    margin-left: 32px;
+}
+
+
+
+.cabecalho-container ul li a {
+    font-size: 1.25rem;
+    font-family: 'poppins', sans-serif;
+    color: var(---cor-p6);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 20px;
+    position: relative;
+}
+
+.cabecalho-container ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0px;
+    bottom: -6px;
+    background-color: var(--cor-p6);
+    position: absolute;
+    transition: .3s;
+}
+
+.cabecalho-container ul li:hover a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--cor-p6);
+    position: absolute;
 }
 
 body {
@@ -173,9 +237,43 @@ body {
     display: none;
 }
 
+footer {
+    background-color: rgba(15, 79, 124, .125);
+    padding: 60px;
+}
+
+.rodape-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.rodape-container div p {
+    font-size: 1.275rem;
+    font-family: 'roboto', sans-serif;
+}
+
+.rodape-container ul {
+    display: flex;
+    gap: 40px;
+}
+
+.rodape-container ul li img {
+    width: 30px
+}
+
 @media (max-width: 1500px){
     .solucao-texto h1 {
         font-size: 3rem;
+    }
+}
+@media (max-width: 1300px) {
+    .cabecalho-container {
+        display: grid;
+        justify-items: center;
+        gap: 30px;
     }
 }
 @media (max-width: 1200px){
@@ -198,6 +296,11 @@ body {
     .solucao-container ul li a {
         font-size: 1.5rem;
         padding: 25px 50px;
+    }
+}
+@media (max-width: 1100px){
+    .rodape-container div p {
+        font-size: 1rem;
     }
 }
 @media (max-width: 800px) {

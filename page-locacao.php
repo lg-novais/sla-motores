@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="shortcut icon" href="../imgs/logo/Imagem_do_WhatsApp_de_2023-12-07_à_s__15.39.45_8b8d64cd-removebg-preview.png" type="image/x-icon">
-    <script>
-        document.documentElement.className += " js"
-    </script>
-    <title>SLA | Locação</title>
-</head> 
-<body>
-    <header>
-        <div class="cabecalho-container">
-            <a href="/"><img src="../imgs/logo/Imagem_do_WhatsApp_de_2023-12-07_à_s__15.39.45_8b8d64cd-removebg-preview.png" alt="" width="150px"></a>
-            <div class="menu-mobile">
-                <ul data-menu="lista">
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="">Empresa</a></li>
-                    <li><a href="vendas.html">Vendas</a></li>
-                    <li><a href="locacao.html">Locação</a></li>
-                    <li><a href="spda.html">SPDA</a></li>
-                    <li><a href="../contato/contato.html">Contato</a></li>
-                </ul>
-                <button data-menu="botao" >Menu</button>
-            </div>
-        </div>
-    </header>
+<?php 
+//Template Name: Page-locação
+?>
 
     <main>
         <div class="servico-titulo">
