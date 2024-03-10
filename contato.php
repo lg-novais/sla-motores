@@ -1,5 +1,5 @@
 <?php 
-    //Template Name: page-contato
+    //Template Name: Page contato
 ?>
 <?php get_header(); ?>
     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>

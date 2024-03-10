@@ -1,4 +1,4 @@
-const lista = document.querySelector('[data-menu="lista"]');
+const lista = document.querySelector('.menu-mobile');
 const botao = document.querySelector('[data-menu="botao"]');
 
 function menuMobile(){

@@ -58,14 +58,19 @@ a {
     border-radius: 6.4px;
     text-transform: uppercase;
     font-weight: bold;
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .5);
     transition: .3s;
 }
 
 .call-to-action a:hover {
     background: var(--cor-p5);
     color: var(--cor-branco);
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, .5);
 }
+
+body {
+    display: grid;
+    justify-self: center;
+  }
 
 header {
     background-color: rgba(15, 79, 124, .125);
@@ -117,11 +122,6 @@ header {
     background-color: var(--cor-p6);
     position: absolute;
 }
-
-body {
-    display: grid;
-    justify-self: center;
-  }
 
 .banners div {
     max-width: 100%;
@@ -367,17 +367,16 @@ footer {
     transform: rotate(90deg);
     transition: .3s;
     }
-    .js [data-menu="lista"]{
+    .js .menu-mobile{
         display: none;
     }
     .js [data-menu="botao"].ativo {
         left: 50px;
-        top: 50px;
+        top: 100px;
         position: fixed;
     }
-    .js [data-menu="lista"].ativo {
-    display: flex;
-    flex-direction: column;
+    .js .menu-mobile.ativo {
+    display: block;
     gap: 22px;
     position: fixed;
     background: #fff;
@@ -386,9 +385,13 @@ footer {
     z-index: 200;
     top: 0px;
     right: 0px;
-    padding-top: 130px;
+    padding-top: 180px;
     box-shadow: 8px 8px 4px 0 rgba(0,0,0,.2);
     border-radius: 8px;
     transition: .3s;
+    }
+    .js .menu-mobile.ativo ul {
+        display: grid;
+
     }
 }

@@ -1,15 +1,49 @@
-.produtos {
-    border-radius: 16px;
-    margin: 0 60px;
-    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, .2);
+.principal-produto{
+    background: #f7f7f7;
 }
 
-.produtos ul li img {
+.principal-produto h1 {
+    font-family: "poppins", sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding: 60px 0 60px 60px;
+    color: var(--cor-p6);
+}
+
+.produtos li {
+    display: grid;
+    /* justify-items: center; */
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px 60px 30px 60px;
+    margin: 0 120px 20px 120px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .175);
+}
+
+.principal-produto h2 {
+    font-family: "poppins", sans-serif;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+    margin-bottom: 8px;
+    color: #c7c7c7;
+}
+
+.produtos ul .produto-container img {
     border-radius: 16px;
 }
 
-.produtos ul li {
-    display: flex;
+.produtos ul .produto-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    gap: 80px;
+    align-items: center;
+}
+
+.produtos ul .produto-container .links a {
+    margin-right: 8px;
+}
+
+.descricao p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1,175rem;
 }
