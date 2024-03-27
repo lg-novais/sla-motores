@@ -16,7 +16,7 @@
                     <h1>Bem-vindo à SLA!</h1>
                     <?php the_field("boas_vindas");?>
                     <div class="call-to-action">
-                        <a href="empresa/empresa.html">Saiba mais</a>
+                        <a href="/">Saiba mais</a>
                     </div>
                 </div>
                 <div class="engenheiro">
@@ -28,9 +28,9 @@
         <section class="solucao">
             <div class="solucao-container">
                 <ul>
-                    <li><a href="servicos/vendas.html">Vendas</a></li>
-                    <li><a href="servicos/locacao.html">Locação</a></li>
-                    <li><a href="servicos/spda.html">SPDA</a></li>
+                    <li><a href="<?php echo home_url('produtos');?>">Vendas</a></li>
+                    <li><a href="<?php echo home_url('produtos');?>">Locação</a></li>
+                    <li><a href="whatsapp://send?phone=5511934641807&text=Olá, tudo bem? Encontrei o site de você e quero saber como funciona o serviço de SPDA.">SPDA</a></li>
                 </ul>
                 <div class="solucao-texto">
                     <h1>Áreas de soluções</h1>

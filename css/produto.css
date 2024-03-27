@@ -3,16 +3,14 @@
 }
 
 .principal-produto h1 {
-    font-family: "poppins", sans-serif;
+    font-family: "Playfair Display SC", sans-serif;
     font-size: 4rem;
     text-transform: uppercase;
     padding: 60px 0 60px 60px;
     color: var(--cor-p6);
 }
 
-.produtos li {
-    display: grid;
-    /* justify-items: center; */
+.produtos ul .produto {
     background: #fff;
     border-radius: 16px;
     padding: 30px 60px 30px 60px;
@@ -23,7 +21,7 @@
 .principal-produto h2 {
     font-family: "poppins", sans-serif;
     font-size: 1.5rem;
-    text-transform: lowercase;
+    text-transform: uppercase;
     margin-bottom: 8px;
     color: #c7c7c7;
 }
@@ -39,11 +37,36 @@
     align-items: center;
 }
 
-.produtos ul .produto-container .links a {
-    margin-right: 8px;
-}
-
 .descricao p {
     font-family: "Roboto", sans-serif;
     font-size: 1,175rem;
+}
+
+.produtos ul li a:first-child {
+    margin-right: 16px;
+}
+
+@media(max-width: 1000px ) {
+    .produto-container {
+        gap: 50px;
+    }
+}
+@media(max-width: 900px){
+    .produtos ul .produto-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .produtos ul li {
+        padding: 0px 0 0 0 ;
+    }
+    .produtos ul li .call-to-action {
+        margin-top: 16px;
+    }
+    .produtos ul li a:first-child{
+        margin-right: 16px;
+    }
+    .produto-container {
+        gap: 0px;
+    }
 }
